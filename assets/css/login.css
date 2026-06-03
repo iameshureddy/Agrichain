@@ -1,0 +1,141 @@
+/* ================================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ================================
+   PAGE BACKGROUND
+   (Image + Green Overlay)
+================================ */
+body {
+  height: 100vh;
+  background:
+    url("../images/farm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================
+   LOGIN WRAPPER
+================================ */
+.login-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* ================================
+   LOGIN CARD
+================================ */
+.login-card {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================
+   HEADER
+================================ */
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-header h1 {
+  font-size: 28px;
+  color: #1b5e20;
+  margin-bottom: 6px;
+}
+
+.login-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================================
+   ALERT MESSAGES
+================================ */
+.alert {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.alert.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* ================================
+   FORM
+================================ */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+}
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-btn:hover {
+  background: #1b5e20;
+  transform: translateY(-1px);
+}
+
+/* ================================
+   FOOTER
+================================ */
+.login-footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}

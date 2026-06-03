@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Composer / PHP
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Cache
+cache/
+*.cache
+
+# Logs
+logs/
+*.log
+
+# Uploads (if user-uploaded files)
+uploads/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Hardhat artifacts
+artifacts/
+cache/
+typechain/
+
+# Build files
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+
+# XAMPP
+xampp_error.log

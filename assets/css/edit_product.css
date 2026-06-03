@@ -1,0 +1,148 @@
+/* ================= EDIT PRODUCT PAGE ================= */
+
+/* Page background consistency */
+body {
+  background: #f4f6f8;
+}
+
+/* Main edit container */
+.edit-container {
+  max-width: 540px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.edit-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.edit-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+.edit-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+.edit-header a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #19d28b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.edit-header a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.edit-form label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #fafafa;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit-form input:focus,
+.edit-form select:focus,
+.edit-form textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+}
+
+.edit-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Current image preview */
+.current-image {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.current-image img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #e0e0e0;
+  margin-top: 6px;
+}
+
+/* Action buttons */
+.edit-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.edit-actions .btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.edit-actions .btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Save button */
+.edit-actions .btn.save {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: #ffffff;
+}
+
+/* Cancel button */
+.edit-actions .btn.cancel {
+  background: #eeeeee;
+  color: #333;
+  text-decoration: none;
+  line-height: 44px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .edit-container {
+    margin: 25px 15px;
+    padding: 24px;
+  }
+
+  .edit-header h1 {
+    font-size: 24px;
+  }
+}

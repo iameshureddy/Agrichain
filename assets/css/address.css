@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* PAGE CENTER */
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CARD */
+.address-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.address-card h2 {
+  margin: 0;
+  text-align: center;
+  color: #2e7d32;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 22px;
+}
+
+/* INPUTS */
+.address-card input {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.address-card input:focus {
+  outline: none;
+  border-color: #43a047;
+  box-shadow: 0 0 0 2px rgba(67,160,71,0.15);
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* MAP */
+.map-label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+#map {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.save-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(46,125,50,0.45);
+}
+
+/* MOBILE */
+@media (max-width: 520px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+/* SUCCESS TOAST */
+.success-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(46,125,50,0.4);
+  z-index: 9999;
+  animation: slideIn 0.4s ease;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

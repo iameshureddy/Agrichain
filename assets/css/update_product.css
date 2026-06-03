@@ -1,0 +1,129 @@
+/* ================= EDIT PRODUCT PAGE ================= */
+
+.edit-container {
+  max-width: 520px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.edit-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-header h1 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+.edit-header p {
+  color: #555;
+  font-size: 14px;
+}
+
+.edit-header a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+/* Form */
+.edit-form label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.edit-form input:focus,
+.edit-form select:focus,
+.edit-form textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46,125,50,0.15);
+}
+
+.edit-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Image preview */
+.current-image {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.current-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #eee;
+}
+
+/* Buttons */
+.edit-actions {
+  margin-top: 22px;
+  display: flex;
+  gap: 14px;
+}
+
+.edit-actions .btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.edit-actions .btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.edit-actions .btn.save {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: #fff;
+}
+
+.edit-actions .btn.cancel {
+  background: #e0e0e0;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .edit-container {
+    margin: 20px;
+    padding: 22px;
+  }
+
+  .edit-header h1 {
+    font-size: 22px;
+  }
+}

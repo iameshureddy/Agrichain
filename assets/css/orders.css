@@ -1,0 +1,173 @@
+/* ===== ORDERS PAGE ===== */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 30px;
+  color: #1f2937;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1b5e20;
+}
+
+/* Wrapper */
+.orders-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Order Card */
+.order-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+  border-left: 6px solid #2e7d32;
+}
+
+/* Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-id {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.order-date {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Info */
+.order-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.placed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge.pending {
+  background: #fff8e1;
+  color: #f9a825;
+}
+
+.badge.failed {
+  background: #fdecea;
+  color: #c62828;
+}
+
+/* Products */
+.products-title {
+  margin: 18px 0 10px;
+  color: #1b5e20;
+  font-size: 16px;
+}
+
+.product-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.mini-product {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #f8faf9;
+  border-radius: 12px;
+  padding: 10px;
+  width: 240px;
+}
+
+.mini-product img {
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.mini-info {
+  font-size: 13px;
+}
+
+/* Blockchain TX */
+.tx {
+  margin-top: 14px;
+  font-size: 12px;
+  word-break: break-all;
+  color: #555;
+}
+
+/* Buy Again */
+.buy-again-btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: #2e7d32;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.buy-again-btn:hover {
+  background: #256428;
+}
+
+/* Empty */
+.no-orders {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .mini-product {
+    width: 100%;
+  }
+}
+
+.toast{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:#2e7d32;
+  color:#fff;
+  padding:14px 24px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+  z-index:9999;
+  animation:slide .4s ease forwards;
+}
+@keyframes slide{
+  from{opacity:0;transform:translateX(40px)}
+  to{opacity:1;transform:translateX(0)}
+}
